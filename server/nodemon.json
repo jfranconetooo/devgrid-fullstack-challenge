@@ -1,0 +1,17 @@
+{
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      ".gitignore",
+      ".eslintrc.json",
+      "node_modules",
+      "dist"
+    ],
+    "watch": [
+      "src/**/*.ts",
+      ".env"
+    ],
+    "exec": "ts-node --transpile-only ./src/server.ts",
+    "ext": "ts"
+}
