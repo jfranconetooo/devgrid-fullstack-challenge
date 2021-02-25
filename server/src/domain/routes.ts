@@ -6,4 +6,6 @@ const ctrl = ctrlFactory();
 
 export default (router: Router<DefaultState, Context>): void => {
     router.get('/', (ctx: Context) => ctx.oK(`Server is running!`));
+    router.get(`/weather`, ctrl.getWeatherInfo);
+    router.get(`/weather/:city`,  ctrl.getWeatherInfoByCity);
 }

@@ -10,7 +10,7 @@ import koaResponse from 'koa-response2';
 
 export default (() => {
     const app = new Koa();
-    const router = new KoaRouter<DefaultState, Context>({ prefix: '/'});
+    const router = new KoaRouter<DefaultState, Context>();
     app.use(cors());
     app.use(logger());
     app.use(koaResponse());
